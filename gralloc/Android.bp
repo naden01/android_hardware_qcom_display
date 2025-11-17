@@ -32,6 +32,7 @@ target_board_platform_cc_library_shared {
         "libsync",
         "libgrallocutils",
         "android.hardware.graphics.common@1.1",
+        "libion",
     ],
     cflags: [
         "-DLOG_TAG=\"qdgralloc\"",
@@ -44,6 +45,7 @@ target_board_platform_cc_library_shared {
     }),
     header_libs: [
         "display_headers",
+        "libion_headers",
         "qti_kernel_headers",
     ],
 }
